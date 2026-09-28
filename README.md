@@ -6,5 +6,9 @@ Using ModReLU as the default activation function (subject to change later on).
 ModReLU is defined as follows:
 
 $$
-\mathrm{ModReLU}(z, b) = \max\left(0, |z| + b\right) \frac{z}{|z|}, \qquad z \neq 0
+\operatorname{ModReLU}(z, b) =
+\begin{cases}
+\left(|z| + b\right)\dfrac{z}{|z|}, & |z| > 0 \ \text{and}\ |z| + b > 0 \\[6pt]
+0, & \text{otherwise}
+\end{cases}
 $$
