@@ -4,6 +4,7 @@ Defined complex scalars, vectors, and matrices with Eigen cpp library.
 
 Using ModReLU as the default activation function (subject to change later on).
 ModReLU is defined as follows:
+
 $$
 \operatorname{ModReLU}(z,\, b) =
 \begin{cases}
